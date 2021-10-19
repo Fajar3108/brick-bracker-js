@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #303030;
+    height: 100vh;
+}
+
+#health {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#gameOver {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 500px;
+    height: 300px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,.3);
+}
+#gameOver.active {
+    display: flex;
+}
+
+#playBtn {
+    padding: 12px 54px;
+    margin-top: 20px;
+    font-size: 24px;
+    text-transform: uppercase   ;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: tomato;
+    color: #fff;
+    border-radius: 5px;
+}
